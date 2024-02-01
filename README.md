@@ -1,5 +1,5 @@
 # PackageReferenceBug
-Demos a compilation error instead of warning (NU1701) when PackageReferencing a project with <Content>.
+Demos a compilation error instead of warning (NU1701) when PackageReferencing a project with Content.
 
 Given a consumer project (with TargetFramework netstandard2.0) that PackageReferences a project with content (with TargetFrameworks net48;net6.0) and a project without content (with TargetFrameworks net48;net6.0),
 the project with content fails to compile without obvious error as to why. On the other hand, the project without content compiles but with warning NU1701.
