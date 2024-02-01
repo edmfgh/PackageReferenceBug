@@ -7,10 +7,12 @@ SDK: 8.0.101
 Build: MSBuild version 17.8.3+195e7f5a3 for .NET, 17.8.3.51904
 
 To reproduce:
+```
 1. "dotnet pack" both ProjectWithContent and ProjectWithoutContent, e.g., "dotnet pack .\ProjectWithContent.csproj" -o <output folder>
 2. Add <output folder> as a NuGet source
 3. Ensure ProjectConsumer references ProjectWithContent and ProjectWithoutContent
 4. Build ProjectConsumer
+```
 
 Expected: ProjectConsumer builds with NU1701 warnings.
 
