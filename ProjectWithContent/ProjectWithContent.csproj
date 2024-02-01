@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net48;net6.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="..\MyFile.txt">
+            <PackagePath>contentFiles/any/any/MyContent</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+            <Pack>true</Pack>
+        </Content>
+    </ItemGroup>
+</Project>
